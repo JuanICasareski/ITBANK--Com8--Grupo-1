@@ -11,7 +11,7 @@ body{
 #consul {
     width: 450px;
     margin: auto;
-    background: rgba(47,134,184,0.8);
+    background: rgba(15,14,128,0.8);
     padding: 10px 20px;
     box-sizing: border-box;
     margin-top: 50px;
@@ -67,12 +67,17 @@ textarea{
 
 }
 .aviso{ 
+    background-color:rgba(117,117,117,0.3);
     box-sizing:border-box;
     text-align: center;
     margin-top: 20px;
-    border: dotted 2px rgba(0, 0, 0, 0.6);
+    border: solid 2px rgba(0, 0, 0, 0.6);
     width:max-content;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
+}
+nav{
+    background-color: rgba(47,134,184,0.8);
+    border-radius: 5px;
 }
