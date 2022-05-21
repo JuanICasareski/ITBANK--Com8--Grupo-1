@@ -1,0 +1,51 @@
+body
+{
+    background-image: url(img/fondo.png);
+    background-color:#163a75d8 ;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+
+
+#inicio{
+    margin: 5%;
+}
+
+#cuentas{
+    background-color: #1c1b2cae;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+#footer{
+    margin: 40px;
+}
+
+.services{
+    padding: 10px;
+    height: 100px;
+    background-color: #1c1b2cae;
+    margin: 15px;
+    margin-left: 20px;
+} 
+
+.cuentaRow{
+    margin: 30px;
+    margin-top: 40px;
+    color: rgb(255, 133, 46);
+}
+
+.cuentaPrecioRow{
+    margin:5px;
+    margin-left: 30px;
+}
+.pCuentas{
+    font-size: 50px;
+}
+
+.search{
+    width: 50%;
+    
+}
