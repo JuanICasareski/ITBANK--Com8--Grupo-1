@@ -1,0 +1,47 @@
+.titulo{
+    margin-left: 3rem;
+    color: aliceblue;
+}
+
+body{
+    background-color: #163b75;
+    background-image: url(../assets/fondo.png);
+    background-size: 34rem;
+}
+.subtitulo{
+    margin-left: 2rem;
+    color: aliceblue;
+
+}
+
+.footer{
+    margin: 0%;
+    background-color: #333333;
+    bottom:0;
+    left:0;
+    width:100%;
+    position: fixed;
+    text-align: right;
+    color: aliceblue;
+}
+
+.todo{
+    background-color: #1c1b2c;
+    padding: 2rem;
+    background-image: url(../assets/circulos.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 35rem;
+}
+
+.recuadro{
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.rocket{
+    float: left;
+    height: 55px;
+}
+
