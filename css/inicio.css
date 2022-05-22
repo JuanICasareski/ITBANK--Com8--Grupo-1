@@ -14,7 +14,11 @@ body
 
 #cuentas{
     border-radius: 25px;
-    background-color: #6a65aa9c;
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16.2px);
+    -webkit-backdrop-filter: blur(16.2px);
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -28,7 +32,11 @@ body
     border-radius: 25px;
     padding: 40px;
     height: 100px;
-    background-color: #6a65aa9c;
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16.2px);
+    -webkit-backdrop-filter: blur(16.2px);
     margin: 15px;
     margin-left: 20px;
 } 
@@ -70,4 +78,8 @@ body
 .dropdownUser{
     width: 50%;
     color: black!important;
+}
+a{
+    color:white;
+    text-decoration:none;
 }
