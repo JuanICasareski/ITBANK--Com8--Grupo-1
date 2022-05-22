@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inversiones ITBANK</title>
+    <link rel="stylesheet" href="../css/inversiones.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<!--nav bar-->
+<nav class="navbar navbar-expand-md bg-white justify-content-between" aria-label="Fourth navbar example">
+    <div class="container-fluid">   
+        <a class="navbar-brand " href="/#/">
+            <img src="../assets/logo.png" alt="..." height="70">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+            aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse text-white" id="navbarsExample04">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item mx-2">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link active" aria-current="page" href="#">Pagos</a>
+                </li> 
+                <li class="nav-item mx-2">
+                    <a class="nav-link active" aria-current="page" href="#">Inversiones</a>
+                </li> 
+                <li class="nav-item mx-2">
+                    <a class="nav-link active" aria-current="page" href="#">Consultas</a>
+                </li> 
+
+                <li class="nav-item dropdown mx-2">
+                    <a class="nav-link dropdown-toggle active"  href="#" id="dropdown04" data-bs-toggle="dropdown"
+                        aria-expanded="false">Transferencias</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                        <li><a class="dropdown-item" href="#">Nueva</a></li>
+                        <li><a class="dropdown-item" href="#">Historial</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-12 col-sm-12 col-md-3 mt-2 mt-sm-2 mt-md-0 d-flex justify-content-end" >
+        <!--- Placeholder para boton de inicio de sesion/nombre --->
+        <a class="mx-3 text-black">
+            Juan I. Casareski
+        </a>
+    </div>
+</nav>
+
+<body>
+    <div class="todo">
+    <br>
+        <!--Titulo-->
+        <img src="../assets/rocket.png" alt="rocket" class="rocket">
+        <h1 class="titulo">Inversiones</h1>
+        <!--Subtitulo-->
+        <p class="subtitulo">En ITBANK tu plata trabaja por vos asi llegas mas comodo a fin de mes
+        </p>
+
+        <br><br>
+
+        <!--Resumen/progress bar-->
+        <h4 class="subtitulo"  >Resumen de Cuenta</h4> 
+        <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">Fondo Comun de Inversion</div>
+            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Dolar Mep</div>
+            <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Plazo Fijo</div>
+            <div class="progess-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"> Cuenta Corriente </div>
+        </div>
+
+        <br><br><br> <!--espacios-->
+
+        <!--Titulo Productos-->
+        <h3 class="subtitulo" style="float:left;margin-right: 1rem;" >Productos</h3>
+        <!--Droplist de Productos-->
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Seleccione un Producto
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Plazo Fijo</a></li>
+            <li><a class="dropdown-item disabled">Fondo Común de Inversión</a></li>
+            <li><a class="dropdown-item disabled">Dolar MEP</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item disabled">Cedears</a></li>
+            <li><a class="dropdown-item disabled">crypto</a></li>
+            </ul>
+        </div>
+    </div>
+        <!--Plazo Fijo recuadro-->
+        <div class="recuadro">
+        <div class="card" style="background-color: aliceblue;"> 
+            <div class="card-body">
+            <h5 class="card-title" style="float:left ;">Plazo Fijo</h5> <p style="text-align: center;">Total Invertido <br> $0,00</p>
+                <div class="btn-group-vertical">
+                        <button type="button" class="btn btn-outline-secondar" style="background-color:white; float:left;" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16" style="margin-bottom: 5px; margin-right: 5px;">
+                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                        </svg>
+                        Nuevo Plazo Fijo
+                    </button>
+                    <button type="button" class="btn btn-outline-secondar" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color:white;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-plus" viewBox="0 0 16 16" style="margin-bottom: 5px; margin-right: 5px;">
+                            <path d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"/>
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                        </svg>
+                        Simular Plazo Fijo
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Simula tu Plazo Fijo</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            <h6>Simula tu Plazo Fijo para y mirá como puede rendir tu plata</h6>
+                            <br>
+                            <p>Escribe el monto en ARS a depositar</p>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                                    <span class="input-group-text">$ ARS</span>
+                                </div>
+                                <select class="form-select" aria-label="Default select example" style="margin-top: 4px;">
+                                    <option selected>Seleccione la cantidad de dias</option>
+                                    <option value="1">30 días</option>
+                                    <option value="2">60 días</option>
+                                    <option value="3">90 días</option>
+                                </select>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success">Simular</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Vencimientos
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"> No hay Vencimientos a mostrar</div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Comrpobantes
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"> No hay comprobantes a mostrar</div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                </div>
+                </div>
+            </div>
+        </div>
+
+<!--<footer>
+    <p class="footer" id="genesis">© Genesis Code Project 2022</p>
+</footer>-->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
