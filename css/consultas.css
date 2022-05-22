@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: #fff;
+    background-color: #1c1b2c ;
     background-size: 100vw 100vh;
     background-attachment: fixed;
     margin: 0;
@@ -9,13 +9,14 @@ body{
 }
 
 #consul {
-    width: 450px;
+    width: 480px;
     margin: auto;
-    background: rgba(15,14,128,0.8);
+    background: #8D8F9A;
     padding: 10px 20px;
     box-sizing: border-box;
-    margin-top: 50px;
-    border-radius: 10px;   
+    margin-top: 20px;
+    border-radius: 10px;
+    border: solid 1px white; 
 }
 
 h2 {
@@ -59,25 +60,39 @@ textarea{
         width: 100%;
     }
 }
-.foto{
-    margin-top: 10px;
+#foto{
+    height: 325px;
+    margin-top: 0px;
     display: flex;
     justify-content: center;
+}
 
 
-}
-.aviso{ 
-    background-color:rgba(117,117,117,0.3);
-    box-sizing:border-box;
-    text-align: center;
-    margin-top: 20px;
-    border: solid 2px rgba(0, 0, 0, 0.6);
-    width:max-content;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-}
 nav{
-    background-color: rgba(47,134,184,0.8);
+    background-color:#fff;
     border-radius: 5px;
 }
+.btn:hover{}
+
+.btn{
+    
+}
+.logo{
+
+    margin-left:55%;
+}
+
+
+
+.aviso{
+    color: white;
+    background-color:rgba(46, 71, 117, 0.8);
+    margin-top: 20px;
+    border: solid 2px rgba(97, 132, 197, 0.3);
+    width:max-content;
+    padding: 10px;
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+}
+
