@@ -1,6 +1,6 @@
 body
 {
-    background-image: url(img/fondo.png);
+    background-image: url(../assets/fondo.png);
     background-color:#163a75d8 ;
     color: white;
     font-family: 'Montserrat';
@@ -14,7 +14,7 @@ body
 
 #cuentas{
     border-radius: 25px;
-    background-color: #1c1b2cae;
+    background-color: #6a65aa9c;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -28,7 +28,7 @@ body
     border-radius: 25px;
     padding: 40px;
     height: 100px;
-    background-color: #1c1b2cae;
+    background-color: #6a65aa9c;
     margin: 15px;
     margin-left: 20px;
 } 
