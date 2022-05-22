@@ -1,0 +1,73 @@
+body
+{
+    background-image: url(img/fondo.png);
+    background-color:#163a75d8 ;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+
+
+#inicio{
+    margin: 5%;
+}
+
+#cuentas{
+    border-radius: 25px;
+    background-color: #1c1b2cae;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+#footer{
+    margin: 40px;
+}
+
+.services{
+    border-radius: 25px;
+    padding: 40px;
+    height: 100px;
+    background-color: #1c1b2cae;
+    margin: 15px;
+    margin-left: 20px;
+} 
+
+.services-sec{
+    margin: 10px;
+}
+
+.cuentaRow{
+    margin: 30px;
+    margin-top: 40px;
+    color: rgb(255, 133, 46);
+}
+
+.cuentaPrecioRow{
+    margin:5px;
+    margin-left: 30px;
+}
+
+.cuentasTitle{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.pCuentas{
+    font-size: 35px;
+}
+
+.search{
+    width: 50%;
+    
+}
+
+.dropdownMenu{
+    color: black!important;
+    width: 50%;
+}
+
+.dropdownUser{
+    width: 50%;
+    color: black!important;
+}
