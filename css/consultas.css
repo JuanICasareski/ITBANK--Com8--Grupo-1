@@ -14,7 +14,7 @@ body{
     background: #8D8F9A;
     padding: 10px 20px;
     box-sizing: border-box;
-    margin-top: 50px;
+    margin-top: 20px;
     border-radius: 10px;
     border: solid 1px white; 
 }
@@ -60,11 +60,12 @@ textarea{
         width: 100%;
     }
 }
-/* .foto{
-    margin-top: 10px;
+#foto{
+    height: 325px;
+    margin-top: 0px;
     display: flex;
-    justify-content: center; */
-
+    justify-content: center;
+}
 
 
 nav{
@@ -84,9 +85,10 @@ nav{
 
 
 .aviso{
-    background-color:rgba(255, 255, 255, 0.8);
+    color: white;
+    background-color:rgba(46, 71, 117, 0.8);
     margin-top: 20px;
-    border: solid 2px rgba(255, 255, 255, 0.5);
+    border: solid 2px rgba(97, 132, 197, 0.3);
     width:max-content;
     padding: 10px;
     text-align: center;
