@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/gastos.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-white" aria-label="Fourth navbar example">
+    <div class="container-fluid">   
+        <a class="navbar-brand " href="/#/">
+            <img src="../assets/logo.png" alt="..." height="70">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+            aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse text-white" id="navbarsExample04">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item mx-2">
+                    <a class="nav-link active" aria-current="page" href="../pages/inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link active" aria-current="page" href="#">Pagos</a>
+                </li> 
+                <li class="nav-item mx-2">
+                    <a class="nav-link active" aria-current="page" href="../pages/inversiones.html">Inversiones</a>
+                </li> 
+
+                <li class="nav-item dropdown mx-2">
+                    <a class="nav-link dropdown-toggle active"  href="#" id="dropdown04" data-bs-toggle="dropdown"
+                        aria-expanded="false">Transferencias</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                        <li><a class="dropdown-item" href="../pages/transacciones.html">Nueva</a></li>
+                        <li><a class="dropdown-item" href="#">Historial</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown mx-2">
+                    <a class="nav-link dropdown-toggle active" href="pages/consultas.html" id="dropdown04" data-bs-toggle="dropdown"
+                        aria-expanded="false">Consultas</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                        <li><a class="dropdown-item" href="../pages/consultas.html">Consultar</a></li>
+                        <li><a class="dropdown-item" href="../pages/preguntasFrecuentes.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-12 col-sm-12 col-md-3 mt-2 mt-sm-2 mt-md-0 text-end">
+        <!--- Placeholder para boton de inicio de sesion/nombre --->
+        <a class="mx-3 text-black">
+            Juan I. Casareski
+        </a>
+    </div>
+</nav>
+
+  <main>
+
+    <div id="cont" class="container w-50 my-4 border border-primary rounded-3">
+
+      <div class="row border border-primary">
+        <div id="color" class=" py-5">
+          <h2 class="fw-bold text-center">
+            App de Gastos
+          </h2>
+          <h6 class="text-center fw-light">
+            Para calcular cuánto debe aportar cada integrante
+          </h6>
+        </div>
+      </div>
+
+      <div id="nomColor" class="row  py-3">
+        <div class="col">
+          <h4>Nombre: </h4>
+        </div>
+        <div class="col">
+          <input type="text" id="nombre" placeholder="Ingrese el Nombre de la Persona" class="w-100 form-control form-control-lg"/>
+        </div>
+      </div>
+
+
+      <div id="gasColor" class="row py-3">
+        <div class="col">
+          <h4>Gastos:</h4>
+        </div>
+        <div class="col">
+          <input class="w-100 form-control form-control-lg"  type="number" id="dinero" placeholder="Ingrese cuánto gastó" />
+        </div>
+      </div>
+
+
+      <div class="row py-3">
+        <div class="col">
+          <button onclick="guardar()"  class="btn btn-primary btn-lg bg-primary">Calcular</button>
+        </div>
+      </div>
+
+      <div >
+
+        <ul id="lista" style="height:150px; overflow-y: scroll">
+
+        </ul>
+        <p id="gastoTotal"></p>
+        <p id="gastoUnitario"></p>
+      </div>
+      
+      <div class="row py-3">
+        <div class="col">
+          <button onclick="location.reload()" class="btn btn-primary btn-lg bg-primary">refrescar</button>
+        </div>
+      </div>
+    </div>
+    
+    
+
+
+  </main>
+
+  <footer>
+    <script src="../scripts/gastos.js"></script>
+  </footer>
+</body>
+
+</html>

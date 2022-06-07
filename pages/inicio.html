@@ -15,7 +15,7 @@
 </head>
 <body>
   <section id="navBar">
-    <nav class="navbar navbar-expand-md bg-white justify-content-between" aria-label="Fourth navbar example">
+    <nav class="navbar navbar-expand-md bg-white" aria-label="Fourth navbar example">
       <div class="container-fluid">   
           <a class="navbar-brand " href="/#/">
               <img src="../assets/logo.png" alt="..." height="70">
@@ -24,36 +24,42 @@
               aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
-
-
+  
+  
           <div class="collapse navbar-collapse text-white" id="navbarsExample04">
               <ul class="navbar-nav me-auto mb-2 mb-md-0">
                   <li class="nav-item mx-2">
-                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                      <a class="nav-link active" aria-current="page" href="../pages/inicio.html">Inicio</a>
                   </li>
                   <li class="nav-item mx-2">
                       <a class="nav-link active" aria-current="page" href="#">Pagos</a>
                   </li> 
                   <li class="nav-item mx-2">
-                      <a class="nav-link active" aria-current="page" href="#">Inversiones</a>
+                      <a class="nav-link active" aria-current="page" href="../pages/inversiones.html">Inversiones</a>
                   </li> 
-                  <li class="nav-item mx-2">
-                      <a class="nav-link active" aria-current="page" href="#">Consultas</a>
-                  </li> 
-
+  
                   <li class="nav-item dropdown mx-2">
                       <a class="nav-link dropdown-toggle active"  href="#" id="dropdown04" data-bs-toggle="dropdown"
                           aria-expanded="false">Transferencias</a>
                       <ul class="dropdown-menu" aria-labelledby="dropdown04">
-                          <li><a class="dropdown-item" href="#">Nueva</a></li>
+                          <li><a class="dropdown-item" href="../pages/transacciones.html">Nueva</a></li>
                           <li><a class="dropdown-item" href="#">Historial</a></li>
+                      </ul>
+                  </li>
+  
+                  <li class="nav-item dropdown mx-2">
+                      <a class="nav-link dropdown-toggle active" href="pages/consultas.html" id="dropdown04" data-bs-toggle="dropdown"
+                          aria-expanded="false">Consultas</a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                          <li><a class="dropdown-item" href="../pages/consultas.html">Consultar</a></li>
+                          <li><a class="dropdown-item" href="../pages/preguntasFrecuentes.html">FAQ</a></li>
                       </ul>
                   </li>
               </ul>
           </div>
       </div>
-
-      <div class="col-12 col-sm-12 col-md-3 mt-2 mt-sm-2 mt-md-0 d-flex justify-content-end" >
+  
+      <div class="col-12 col-sm-12 col-md-3 mt-2 mt-sm-2 mt-md-0 text-end">
           <!--- Placeholder para boton de inicio de sesion/nombre --->
           <a class="mx-3 text-black">
               Juan I. Casareski
