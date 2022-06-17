@@ -1,0 +1,51 @@
+body{
+    background-color: #163b75;
+    background-image: url(../assets/fondo.png);
+    background-size: 34rem;
+
+}
+
+#containerCompraVenta{
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    width:80%;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+#containerCompraVenta h5{
+    text-align: center;
+}
+#containerCompraVenta h4{
+    text-align: center;
+}
+
+#containerCompraVenta p{
+    text-align: center;
+}
+
+.bbg{
+    border-bottom:1px solid grey;
+}
+
+.title{
+    font-size: 27px;
+    text-align: center;
+    background-color: #163b75;
+    color: aliceblue;
+}
+
+#valor{
+    margin: auto;
+    display: flex;
+    border: none;
+    text-align: center;
+}
+
+.p10{
+    padding: 10px 10px;
+}
+

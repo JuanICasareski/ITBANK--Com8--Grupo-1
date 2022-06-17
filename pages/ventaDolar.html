@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/compraVentaDolar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;300;400&family=Poppins:ital,wght@0,400;1,600&display=swap"rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-white" aria-label="Fourth navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="/#/">
+                <img src="../assets/logo.png" alt="..." height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse text-white" id="navbarsExample04">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="../pages/inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="#">Pagos</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="../pages/inversiones.html">Inversiones</a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="../pages/gastos.html">Gastos</a>
+                    </li>
+
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle active" href="#" id="dropdown04" data-bs-toggle="dropdown"
+                            aria-expanded="false">Transferencias</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                            <li><a class="dropdown-item" href="../pages/transacciones.html">Nueva</a></li>
+                            <li><a class="dropdown-item" href="#">Historial</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle active" href="../pages/consultas.html" id="dropdown04"
+                            data-bs-toggle="dropdown" aria-expanded="false">Consultas</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                            <li><a class="dropdown-item" href="../pages/consultas.html">Consultar</a></li>
+                            <li><a class="dropdown-item" href="../pages/preguntasFrecuentes.html">FAQ</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle active" href="../pages/compraVentaDolar.html" id="dropdown04"
+                            data-bs-toggle="dropdown" aria-expanded="false">Dolar</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                            <li><a class="dropdown-item" href="../pages/ventaDolar.html">Venta</a></li>
+                            <li><a class="dropdown-item" href="../pages/compraDolar.html">Compra</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-3 mt-2 mt-sm-2 mt-md-0 text-end">
+            <!--- Placeholder para boton de inicio de sesion/nombre --->
+            <a class="mx-3 text-black">
+                Juan I. Casareski
+            </a>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="container " id="containerCompraVenta">
+            <div class="row">
+                <div class="col">
+
+                    <div class="card bgc-g p10">
+                        <div class="card-header title ">
+                            Venta
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title ">Ingrese importe en dolares</h5>
+                            <input type="text" id="valor" placeholder="u$s 0,00"class="w-100 form-control form-control-lg" />
+                            <p class="card-text bbg">Son $ 0,00</p>
+                            <p class="card-text">Cotizacion actual: 1 u$s = {aca iria precio actual dolar}</p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <button type="button" class="btn btn-outline-dark">Vender</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
