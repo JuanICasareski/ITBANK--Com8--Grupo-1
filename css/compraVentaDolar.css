@@ -2,7 +2,7 @@ body{
     background-color: #163b75;
     background-image: url(../assets/fondo.png);
     background-size: 34rem;
-
+    font-size: 14px;
 }
 
 #containerCompraVenta{
