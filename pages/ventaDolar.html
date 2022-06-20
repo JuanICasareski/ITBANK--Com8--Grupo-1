@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="../css/compraVentaDolar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;300;400&family=Poppins:ital,wght@0,400;1,600&display=swap"rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;300;400&family=Poppins:ital,wght@0,400;1,600&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -99,7 +101,8 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title ">Ingrese importe en dolares</h5>
-                            <input type="text" id="valor" placeholder="u$s 0,00"class="w-100 form-control form-control-lg" />
+                            <input type="text" id="valor" placeholder="u$s 0,00"
+                                class="w-100 form-control form-control-lg" />
                             <p class="card-text bbg">Son $ 0,00</p>
                             <p class="card-text">Cotizacion actual: 1 u$s = {aca iria precio actual dolar}</p>
                         </div>
@@ -113,13 +116,38 @@
 
             </div>
         </div>
-
-
+        <div>
+            <table class="table table-light table-sm">
+                <tr>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Compra</th>
+                    <th scope="col">Venta</th>
+                    <th scope="col">Variacion</th>
+                </tr>
+            </table>
+        </div>
     </main>
 
     <footer>
 
     </footer>
+    <script>
+        let url = "https://www.dolarsi.com/api/api.php?type=valoresprincipales"
+        fetch(url)
+            .then(response => response.json())
+            .then(data => mostrarCot(data))
+            .catch(error => console.log(error))
+
+        const mostrarCot = (data) => {
+            console.log(data)
+            let table = ""
+            for (let i = 0; i < data.length; i++) {
+                table += `<tr><td>${data[i].nombre}</td><td>${data[i].compra}</td><td>${data[i].venta}</td><td>${data[i].variacion}</td></tr>`
+            }
+
+            document.getElementById(data).innerHTML = table
+        }
+    </script>
 </body>
 
 </html>
