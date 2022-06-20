@@ -21,3 +21,12 @@ body{
 #tit {
     color: bisque;
 }
+
+.m5{
+    padding: 5px;
+}
+
+.cotizaciones{
+    padding: 10px;
+    background-color: aliceblue;
+}
