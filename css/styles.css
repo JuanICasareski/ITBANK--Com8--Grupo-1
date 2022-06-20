@@ -1,0 +1,23 @@
+body{
+    background-image: url(../assets/img.v.png);
+
+}
+#cont{
+    border-radius: 35px;
+    background: rgb(165, 188, 168);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(12, 55, 248, 0.945);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#uColor{
+    color: rgb(3, 2, 2);
+}
+
+#color{
+    background-color: rgb(12, 5, 104);
+}
+
+#tit {
+    color: bisque;
+}
