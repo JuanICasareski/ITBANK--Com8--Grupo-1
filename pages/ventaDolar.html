@@ -20,7 +20,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body onLoad="obtenerCotizacionActual(0)">
     <nav class="navbar navbar-expand-md bg-white" aria-label="Fourth navbar example">
         <div class="container-fluid">   
             <a class="navbar-brand " href="/#/">
@@ -102,7 +102,7 @@
                             <h5 class="card-title ">Ingrese importe en dolares</h5>
                             <input type="number" id="valor" placeholder="u$s 0,00" class="w-100 form-control form-control-lg" />
                             <p class="card-text bbg" id="valorFinal">Son $ 0,00</p>
-                            <!-- <p class="card-text">Cotizacion actual: 1 u$s = {aca iria precio actual dolar}</p> -->
+                            <p class="card-text"  id="valorCotizacionActual"></p>
                         </div>
                         <div class="row">
                             <div class="col text-center">
@@ -114,16 +114,6 @@
 
             </div>
         </div>
-        <!-- <div>
-            <table class="table table-light table-sm">
-                <tr>
-                    <th scope="col">Tipo</th>
-                    <th scope="col">Compra</th>
-                    <th scope="col">Venta</th>
-                    <th scope="col">Variacion</th>
-                </tr>
-            </table>
-        </div> -->
     </main>
 
     <footer>
