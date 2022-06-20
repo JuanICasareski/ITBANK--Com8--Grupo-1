@@ -88,7 +88,6 @@
     </nav>
 
     <main>
-
         <div class="container " id="containerCompraVenta">
             <div class="row">
                 <div class="col">
@@ -96,14 +95,14 @@
                         <div class="card-header title ">Compra</div>
                         <div class="card-body">
                             <h5 class="card-title ">Ingrese importe en dolares</h5>
-                            <input type="text" id="valor" placeholder="u$s 0,00" class="w-100 form-control form-control-lg"/>
-                            <p class="card-text bbg">Son $ 0,00</p>
-                            <p class="card-text">Cotizacion actual: 1 u$s = {aca iria precio actual dolar}</p>
+                            <input type="number" id="valor" placeholder="u$s 0,00" class="w-100 form-control form-control-lg"/>
+                            <p class="card-text bbg"  id="valorFinal">Son $ 0,00</p>
+                            <!-- <p class="card-text">Cotizacion actual: 1 u$s = {aca iria precio actual dolar}</p> -->
                         </div>
 
                         <div class="row">
                             <div class="col text-center">
-                                <button type="button" class="btn btn-outline-dark">Comprar</button>
+                                <button type="button" onclick="obtenerValor(1)"  class="btn btn-outline-dark">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -116,7 +115,7 @@
     </main>
 
     <footer>
-
+        <script src="../scripts/compraVentaDolar.js"></script>
     </footer>
 </body>
 

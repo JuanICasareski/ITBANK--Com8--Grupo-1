@@ -90,7 +90,6 @@
     </nav>
 
     <main>
-
         <div class="container " id="containerCompraVenta">
             <div class="row">
                 <div class="col">
@@ -101,14 +100,13 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title ">Ingrese importe en dolares</h5>
-                            <input type="text" id="valor" placeholder="u$s 0,00"
-                                class="w-100 form-control form-control-lg" />
-                            <p class="card-text bbg">Son $ 0,00</p>
-                            <p class="card-text">Cotizacion actual: 1 u$s = {aca iria precio actual dolar}</p>
+                            <input type="number" id="valor" placeholder="u$s 0,00" class="w-100 form-control form-control-lg" />
+                            <p class="card-text bbg" id="valorFinal">Son $ 0,00</p>
+                            <!-- <p class="card-text">Cotizacion actual: 1 u$s = {aca iria precio actual dolar}</p> -->
                         </div>
                         <div class="row">
                             <div class="col text-center">
-                                <button type="button" class="btn btn-outline-dark">Vender</button>
+                                <button type="button" onclick="obtenerValor(0)" class="btn btn-outline-dark">Vender</button>
                             </div>
                         </div>
                     </div>
@@ -116,7 +114,7 @@
 
             </div>
         </div>
-        <div>
+        <!-- <div>
             <table class="table table-light table-sm">
                 <tr>
                     <th scope="col">Tipo</th>
@@ -125,29 +123,13 @@
                     <th scope="col">Variacion</th>
                 </tr>
             </table>
-        </div>
+        </div> -->
     </main>
 
     <footer>
-
+        <script src="../scripts/compraVentaDolar.js"></script>
     </footer>
-    <script>
-        let url = "https://www.dolarsi.com/api/api.php?type=valoresprincipales"
-        fetch(url)
-            .then(response => response.json())
-            .then(data => mostrarCot(data))
-            .catch(error => console.log(error))
 
-        const mostrarCot = (data) => {
-            console.log(data)
-            let table = ""
-            for (let i = 0; i < data.length; i++) {
-                table += `<tr><td>${data[i].nombre}</td><td>${data[i].compra}</td><td>${data[i].venta}</td><td>${data[i].variacion}</td></tr>`
-            }
-
-            document.getElementById(data).innerHTML = table
-        }
-    </script>
 </body>
 
 </html>
